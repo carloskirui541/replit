@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "version": "2.0.0.0",
+    "name": "Carlos's leads tracker",
+    "description": "This is a leads tracker created by Carlos Kirui. He is just 14yrs old and already has his own chrome extension. Is that just cool.",
+    "action" : {
+        "default_popup": "index.html",
+        "default_icon": "icon.jpeg"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
