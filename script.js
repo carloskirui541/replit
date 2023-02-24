@@ -33,6 +33,11 @@ saveTab.addEventListener('click', function() {
 
 
 deleteBtn.addEventListener('dblclick', function() {
+    
+    if (myLeads = ['']) {
+        alert('nothing entered')
+        break;
+    }
     let clearLocalStorage = confirm('Do you want to clear the local storage??')
         if (clearLocalStorage === true) {
             confirm('localStorage has been cleared successfuly!!!');
@@ -50,9 +55,7 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem('myLeads', JSON.stringify(myLeads))
 
     render(myLeads);
-    if (myLeads = ['']) {
-        confirm('nothing entered')
-    }
+
     console.log(localStorage.getItem('myLeads'))
 });
 
