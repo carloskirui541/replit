@@ -47,12 +47,12 @@ deleteBtn.addEventListener('dblclick', function() {
 inputBtn.addEventListener("click", function() {
     myLeads.push(textEl.value);
     textEl.value = "";
-    if (myLeads = ['']) {
-        alert('nothing entered')
-    }
     localStorage.setItem('myLeads', JSON.stringify(myLeads))
 
     render(myLeads);
+    if (myLeads = ['']) {
+        alert('nothing entered')
+    }
     console.log(localStorage.getItem('myLeads'))
 });
 
