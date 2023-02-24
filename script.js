@@ -37,16 +37,17 @@ deleteBtn.addEventListener('dblclick', function() {
     if (myLeads = ['']) {
         alert('nothing entered')
         break;
-    }
-    let clearLocalStorage = confirm('Do you want to clear the local storage??')
-        if (clearLocalStorage === true) {
-            confirm('localStorage has been cleared successfuly!!!');
-            localStorage.clear();
-            myLeads = [];
-            render(myLeads);   
+    } else {    
+        let clearLocalStorage = confirm('Do you want to clear the local storage??')
+           if (clearLocalStorage === true) {
+              confirm('localStorage has been cleared successfuly!!!');
+              localStorage.clear();
+              myLeads = [];
+             render(myLeads);   
         } else {
             confirm('The action has been aborted!!')
         }
+}
 })
 
 inputBtn.addEventListener("click", function() {
