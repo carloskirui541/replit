@@ -51,7 +51,7 @@ inputBtn.addEventListener("click", function() {
 
     render(myLeads);
     if (myLeads = ['']) {
-        alert('nothing entered')
+        confirm('nothing entered')
     }
     console.log(localStorage.getItem('myLeads'))
 });
